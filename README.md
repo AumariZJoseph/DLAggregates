@@ -1,17 +1,45 @@
 README: DL Equipment & Aggregates Ltd Website
 Business Overview
-DL Equipment & Aggregates Ltd is a construction and heavy equipment company based in Saint Lucia, operating as a holding company that provides:
+DL Equipment & Aggregates Ltd is a Saint Lucian construction and heavy equipment company. DL can act as a general contractor or support another contractor as a specialist project partner. Its core capabilities include:
+
+Company Story
+Founder: Dennis Louis, originally from Cacao, Babonneau
+Business partner: Lindy Louis, Dennis's wife, who has supported the company from day one
+Founded: 2014, beginning with one 10-wheel dump truck
+Dennis's background: Trained auto mechanic who moved into heavy-equipment mechanics, trailer driving, machinery transport and equipment operation
+Major expansion: 2017, moving into heavy equipment, aggregates and construction materials
+Team: Approximately 27–28 employees, with workforce scaled further for larger projects
+In-house support: DL operates its own garage with mechanics, electricians, welders and body technicians to maintain and repair its fleet
+Founder statement: "From scratch—from nothing to something—we develop it."
 
 Products & Services
-Building Supplies & Aggregates:
-Sand, gravel, crushed stone, topsoil, pumice, quarry waste, crusher run
-Cement, blocks, ready-mix concrete
-Heavy Equipment Rentals:
-Excavators, backhoes, bulldozers, loaders, rollers/compactors
+Construction & General Contracting:
+Building and civil construction
+General contracting or specialist project support
 
-Site Preparation & Works:
-Grading, clearing, compacting, demolition (bridges, buildings, civil structures)
-Desilting projects
+Major Demolition:
+Large commercial and hotel demolition
+Structural removal supported by DL's heavy equipment and haulage capability
+
+Land Development & Site Works:
+Clearing, earthworks, grading, compacting and enabling works
+Retaining walls and civil construction
+
+Building Supplies & Aggregates:
+Concrete blocks manufactured by DL
+Sand produced in-house
+Aggregates, cement and ready-mix concrete supplied
+Products available for purchase and collection at the Hill 20 depot
+Exact grades, sizes and detailed catalogue still require confirmation
+Heavy Equipment Rentals:
+All DL equipment is available for rent, subject to scheduling
+Seven excavators ranging from approximately 3.5 to 35 tonnes
+Bulldozer, motor grader, rollers, backhoe and forklifts
+Five 10-wheel dump trucks plus smaller trucks
+Four trailer tractor heads
+Lowboys, flatbeds, 20-foot beds and 40-foot beds
+Two cranes
+Exact makes, models, years and individual capacities still require confirmation
 
 Haulage & Transport:
 Island-wide heavy equipment haulage
@@ -21,6 +49,7 @@ Construction waste disposal
 
 Location & Contact
 Address: Hill 20, Babonneau, Saint Lucia
+Location type: Store, sales depot, equipment yard and office
 Phone: 1-758-450-5997 / 1-758-715-0830 / (758) 719-6705
 Email: dlequipment.aggregates@gmail.com
 Facebook: DL Equipment & Aggregates Ltd
@@ -28,9 +57,8 @@ Facebook: DL Equipment & Aggregates Ltd
 Tagline: "Call us for your heavy equipment and hauling needs. We provide efficient pick, delivery and construction services island wide."
 
 Opening Hours:
-Monday–Friday: 7:30 AM – 5:00 PM
-Saturday: 8:00 AM – 1:00 PM (select hours)
-Sunday: 7:30 AM – 4:00 PM (sales depot, select hours)
+Monday–Friday: 8:00 AM – 4:00 PM
+Sunday: 8:00 AM – 1:00 PM
 
 Brand Colors
 Red (primary — color of their trucks)
@@ -39,7 +67,7 @@ White (accent/background)
 
 Website Purpose & Goals
 Primary Goal
-Strengthen online visibility and position DL as a go-to partner for large-scale B2B construction contracts — not small residential jobs.
+Strengthen online visibility and position DL as a go-to general contractor and specialist delivery partner for large-scale B2B construction, demolition and land-development contracts — not small residential jobs. Block and aggregate sales already perform well; the website's priority is winning major projects.
 
 Target Audience
 Government contractors (infrastructure, public housing, utilities)
@@ -51,14 +79,17 @@ Foreign contractors working in St. Lucia
 Key Differentiators
 Service quality and flexibility
 Island-wide availability
-Full-service offering (materials + equipment + haulage + site works)
+Full-service offering (construction + demolition + land development + materials + equipment + haulage)
+In-house fleet maintenance and repair capability
+Ability to lead a project or support contractors with equipment, transport and materials
+Founder and team have hands-on mechanical, operating and transport experience
 
 Required Website Features
 Pages
 Home — Hero section with tagline, service overview, CTA
 Equipment Rental — List of available machinery with descriptions
 Haulage Services — Island-wide transport capabilities
-Aggregates & Materials — Product listings (sand, gravel, cement, blocks, ready-mix, etc.)
+Aggregates & Materials — DL-manufactured blocks and the confirmed aggregate catalogue (exact aggregate types pending)
 Site Works — Grading, clearing, demolition, desilting
 Projects — Portfolio of notable completed work (critical for credibility with large clients)
 About Us — Company background, team, values
@@ -86,9 +117,11 @@ Equipment Rental:
 
 Aggregates & Materials:
 
-"aggregates St. Lucia", "sand and gravel St. Lucia", "crushed stone St. Lucia"
+"aggregates St. Lucia", "aggregate supplier St. Lucia", "aggregates Babonneau"
 
-"ready mix concrete St. Lucia", "cement blocks St. Lucia", "topsoil St. Lucia", "crusher run St. Lucia"
+"concrete blocks St. Lucia", "blocks Babonneau", "building blocks St. Lucia"
+
+Add product-specific aggregate terms only after the catalogue is confirmed by DL.
 
 Haulage & Transport:
 
@@ -134,7 +167,7 @@ LocalBusiness (or GeneralContractor subtype) on the Home page — name, address,
 
 Service schema on each service page.
 
-Product schema on aggregate/material listings where appropriate (with Offer for ready-mix, blocks, etc.).
+Product schema on confirmed aggregate and concrete-block listings where appropriate.
 
 BreadcrumbList on interior pages.
 
