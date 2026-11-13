@@ -165,7 +165,7 @@ main :is(h1, h2, h3) {
 .capability-strip strong { margin-bottom: 5px; font-size: 1.05rem; line-height: 1.15; opacity: 1; }
 
 .section-intro h2, .projects h2, .about-copy h2, .updates h2, .quote-section h2, .contact-card h2 { margin: 0; font-size: clamp(2.9rem, 6.2vw, 5.7rem); color: var(--ink); }
-.section-intro p:last-child, .project-intro-actions p { margin: 0; color: var(--muted); }
+.section-intro p:last-child { margin: 0; color: var(--muted); }
 .services-section { background: var(--limestone); }
 .services-layout { display: grid; gap: 42px; }
 .services-intro { max-width: 560px; }
@@ -210,11 +210,7 @@ main :is(h1, h2, h3) {
 .project-caption p { margin: 7px 0 0; color: #e4e3df; font-size: var(--text-small); }
 .project-caption a { color: inherit; }
 .project-caption a:hover, .project-caption a:focus-visible { text-decoration: underline; text-underline-offset: .12em; }
-.project-note { margin: 20px 0 0; color: #676660; font-size: var(--text-small); }
-.project-note i { margin-right: 6px; color: var(--red); }
 .projects-cta { margin-top: 16px; }
-
-@keyframes testimonial-reveal { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
 
 .about-block { overflow: hidden; background: #fff; }
 .about-block .shell { width: 100%; max-width: none; }

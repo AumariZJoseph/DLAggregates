@@ -108,10 +108,9 @@ if (quoteForm && formStatus) {
   const submitLabel = quoteForm.querySelector('[data-submit-label]');
   const sourceField = quoteForm.querySelector('[name="source"]');
 
-  const showFormStatus = (message, state) => {
+  const showFormStatus = (message, isError = false) => {
     formStatus.hidden = false;
-    formStatus.classList.toggle('is-error', state === 'error');
-    formStatus.classList.toggle('is-success', state === 'success');
+    formStatus.classList.toggle('is-error', isError);
     formStatus.textContent = message;
     formStatus.focus();
   };
@@ -151,9 +150,9 @@ if (quoteForm && formStatus) {
       quoteForm.reset();
       if (sourceField) sourceField.value = window.location.href;
       window.hcaptcha?.reset?.();
-      showFormStatus('Thanks—your enquiry has been sent. Our team will be in touch shortly.', 'success');
+      showFormStatus('Thanks—your enquiry has been sent. Our team will be in touch shortly.');
     } catch (error) {
-      showFormStatus('We could not send your request. Please try again, or call +1 758 450 5997 or +1 758 719 6705.', 'error');
+      showFormStatus('We could not send your request. Please try again, or call +1 758 450 5997 or +1 758 719 6705.', true);
     } finally {
       if (submitLabel && originalLabel) submitLabel.textContent = originalLabel;
       if (submitButton) {
