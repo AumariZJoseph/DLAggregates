@@ -28,6 +28,7 @@
 .demolition-video { display: block; width: 100%; height: auto; aspect-ratio: 848 / 480; background: var(--ink); }
 .demolition-intro-copy { max-width: 720px; }
 .demolition-intro-copy .text-link { margin-top: 14px; }
+.demolition-intro-copy p a { color: var(--red-dark); text-decoration: underline; text-underline-offset: .2em; }
 .demolition-intro-copy .lead, .demolition-depth-copy .lead { margin: 0; color: #2f2f2c; font-size: clamp(1.18rem, 2vw, 1.45rem); line-height: 1.65; }
 .demolition-intro-copy p:not(.lead), .demolition-depth-copy p:not(.lead) { margin: 22px 0 0; color: var(--muted); line-height: 1.78; }
 

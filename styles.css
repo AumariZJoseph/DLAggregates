@@ -183,6 +183,8 @@ button, input, select, textarea { font: inherit; }
 .project-caption span { color: var(--yellow); font-size: var(--text-small); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .project-caption h3 { max-width: 620px; margin: 7px 0 4px; font-family: var(--display); font-size: clamp(1.5rem, 3vw, 2.7rem); line-height: 1.08; text-transform: uppercase; }
 .project-caption p { margin: 7px 0 0; color: #e4e3df; font-size: var(--text-small); }
+.project-caption a { color: inherit; }
+.project-caption a:hover, .project-caption a:focus-visible { text-decoration: underline; text-underline-offset: .12em; }
 .project-note { margin: 20px 0 0; color: #676660; font-size: var(--text-small); }
 .project-note i { margin-right: 6px; color: var(--red); }
 .projects-cta { margin-top: 16px; }
