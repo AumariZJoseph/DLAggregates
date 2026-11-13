@@ -74,7 +74,7 @@ if (projectLedger) {
 }
 
 const heroVideo = document.querySelector('#heroVideo');
-if (heroVideo) {
+if (heroVideo && 'IntersectionObserver' in window) {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let heroVisible = false;
 
@@ -144,7 +144,7 @@ if (quoteForm && formStatus) {
       });
       const data = await response.json().catch(() => ({}));
 
-      if (!response.ok || data.success === false) {
+      if (!response.ok || data.success !== true) {
         throw new Error(data.message || 'We could not send your request.');
       }
 
@@ -160,58 +160,6 @@ if (quoteForm && formStatus) {
         submitButton.disabled = false;
         submitButton.removeAttribute('aria-busy');
       }
-    }
-  });
-}
-
-const testimonialCarousel = document.querySelector('[data-testimonial-carousel]');
-
-if (testimonialCarousel) {
-  const slides = [...testimonialCarousel.querySelectorAll('[data-testimonial-slide]')];
-  const dots = [...testimonialCarousel.querySelectorAll('[data-testimonial-dot]')];
-  const previousButton = testimonialCarousel.querySelector('[data-testimonial-prev]');
-  const nextButton = testimonialCarousel.querySelector('[data-testimonial-next]');
-  const status = testimonialCarousel.querySelector('[data-testimonial-status]');
-  let currentIndex = 0;
-
-  const showTestimonial = (index) => {
-    currentIndex = (index + slides.length) % slides.length;
-
-    slides.forEach((slide, slideIndex) => {
-      slide.hidden = slideIndex !== currentIndex;
-    });
-
-    dots.forEach((dot, dotIndex) => {
-      if (dotIndex === currentIndex) {
-        dot.setAttribute('aria-current', 'true');
-      } else {
-        dot.removeAttribute('aria-current');
-      }
-    });
-
-    if (status) {
-      status.textContent = `${currentIndex + 1} of ${slides.length}`;
-    }
-  };
-
-  previousButton?.addEventListener('click', () => showTestimonial(currentIndex - 1));
-  nextButton?.addEventListener('click', () => showTestimonial(currentIndex + 1));
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => showTestimonial(index));
-  });
-
-  testimonialCarousel.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowLeft') {
-      event.preventDefault();
-      showTestimonial(currentIndex - 1);
-      previousButton?.focus();
-    }
-
-    if (event.key === 'ArrowRight') {
-      event.preventDefault();
-      showTestimonial(currentIndex + 1);
-      nextButton?.focus();
     }
   });
 }

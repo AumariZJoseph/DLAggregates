@@ -1,167 +1,48 @@
-# DL Equipment & Aggregates Website — Handover
+# DL Equipment & Aggregates Ltd website handover
 
-Last updated: 12 November 2026
+Updated 13 November 2026
 
-## Project objective
+## Current state
 
-Build a client-ready website for DL Equipment & Aggregates Ltd that positions the company for major B2B construction, demolition and land-development work in Saint Lucia.
+The site is a static HTML, CSS and JavaScript project prepared for launch testing. The approved hero copy and industrial design are intact. Search priorities are commercial demolition first, heavy equipment rental second, construction and civil works third, and haulage and trucking fourth. The Hill 20 materials depot has its own service page.
 
-The primary audience is government contractors, commercial developers, major construction firms and overseas contractors working locally. Block and aggregate sales already perform well; the website's main commercial job is to help DL win larger projects.
+The homepage, About, five service pages, and Projects have indexable page content and are listed in the XML sitemap. The coming-soon Project Notes page stays available with a noindex directive. The Contact route takes visitors to the homepage contact section. The custom 404 page is available for the host to serve with an HTTP 404 status.
 
-The owner has reviewed the demo and approved its overall look, feel and direction.
+The illustrative testimonials have been removed from the homepage and its scripts and styles. Approved testimonials can be added after launch. Rex St. Lucian and Queenslane lead the demolition proof, with Buckeye and LaCroix Chabeaux supporting equipment and civil works. The existing galleries have direct links. A standalone Rex case study can follow once DL approves the project scope, location, dates, permissions and any outcomes to publish.
+
+## Domain decision deferred
+
+- Preferred domain: dlequipmentaggregatesltd.com. It is already owned by another party. The user has contacted the owner through GoDaddy and is exploring recovery. Ownership and hosting access remain unconfirmed.
+- Fallback: dlequipmentaggregates.com. This is the strongest alternative identified by the user if the preferred domain cannot be recovered. Registration and control remain unconfirmed.
+- The draft currently uses dlequipmentaggregates.com in the canonical links, Open Graph metadata, JSON-LD, sitemap and robots.txt. Treat those URLs as provisional until the final public hostname is chosen. Keep the preview access-controlled if it is hosted publicly before launch.
+- Once ownership is confirmed, connect the chosen host, verify HTTPS, and make all public URLs use the same hostname. Redirect any controlled legacy domain and known old paths to their relevant equivalents. Confirm the WWW and HTTP variants, the slash policy and the Contact redirect on the actual host.
 
 ## Confirmed business information
 
-- Company: DL Equipment & Aggregates Ltd
-- Founder/owner: Denis Louis, originally from Cacao, Babonneau
-- Denis's wife, Lindy Louis, has helped build the company from day one.
-- Founded in 2014 with one dump truck.
-- Expanded into heavy equipment, aggregates and construction materials in 2017.
-- Based at Hill 20, Babonneau, Saint Lucia.
-- Hill 20 is a store, sales depot, equipment yard and office.
-- DL can lead projects as a general contractor or support another contractor as a specialist partner.
-- Core work: construction, major demolition, land development, excavation, site clearing/preparation, road development, equipment rental, haulage and material supply.
-- Major demolition is a genuine DL speciality. Its work is not limited to the named projects currently shown on the website.
-- Materials available from Hill 20 include concrete blocks manufactured in-house, sand, gravel, crushed stone, cement and ready-mix concrete. Customers can arrange collection or discuss site delivery with DL.
-- Rental fleet includes seven excavators from approximately 3.5 to 35 tonnes, a bulldozer, one grader, rollers, a backhoe, dumpers, forklifts, 20-tonne dump trucks, smaller trucks and trailer trucks with lowboys, flatbeds and 20- and 40-foot beds.
-- Crane trucks have rated lifting capacities from 2.5 to 45 tonnes. Heavy equipment haulage capacity is up to 30 tonnes, subject to the load, route and site access.
-- Approximately 27–28 employees, with staffing increased for larger projects.
-- DL maintains its fleet through an in-house garage with mechanics, electricians, welders and body technicians.
-- Opening hours: Monday–Friday 8:00 AM–4:00 PM; Saturday closed; Sunday 8:00 AM–1:00 PM.
-- Main phone: +1 758 450 5997
-- Alternate phone: +1 758 719 6705
-- Email: dlequipment.aggregates@gmail.com
+- DL Equipment & Aggregates Ltd was founded in 2014 by Denis Louis of Cacao, Babonneau, with Lindy Louis involved from the beginning. DL expanded into heavy equipment and materials in 2017.
+- Hill 20, Babonneau, Saint Lucia is the store, sales depot, equipment yard and office. Hours are Monday to Friday 8:00 AM to 4:00 PM, Saturday closed and Sunday 8:00 AM to 1:00 PM.
+- Main phone +1 758 450 5997. Alternate phone +1 758 719 6705. Email dlequipment.aggregates@gmail.com. The former 715 number should be removed from directory listings.
+- DL can lead an agreed scope as general contractor or work alongside a principal contractor. Core services include commercial and hotel demolition, construction, excavation, land development, site preparation, road works, equipment hire, haulage and materials.
+- Hill 20 supplies in-house concrete blocks, sand, gravel, crushed stone, cement and ready-mix concrete. The depot handles pricing, grades, sizes, availability, collection and delivery enquiries.
+- The fleet includes seven excavators from approximately 3.5 to 35 tonnes, one grader, a bulldozer, rollers, a backhoe, dumpers, forklifts, 20-tonne dump trucks, smaller trucks, trailer trucks, lowboys, flatbeds and 20- and 40-foot beds.
+- Crane trucks have rated lifting capacities of 2.5 to 45 tonnes. Heavy equipment haulage is available up to 30 tonnes, subject to the load, route and site access. The in-house garage supports fleet maintenance.
 
-Founder statements worth preserving:
-
-- “From scratch—from nothing to something—we develop it.”
-- “Whatever we don't have, we can source. We don't back down from the work.”
-
-## Information that remains provisional or incomplete
-
-- Material grades, product sizes and pricing can be handled by the depot when customers enquire. The site lists the confirmed product types.
-- Formal equipment schedule with makes, models, years, attachments and machine-specific capacities. Operations can confirm availability and individual requirements for each hire.
-- Detailed credentials, licences, insurance, safety certifications and procurement documentation
-- Full project list, dates, locations, client permissions and measurable outcomes
-- Approved client testimonials
-- Confirmed social media URLs
-
-Do not invent claims about hazardous-material removal, demolition permits, recycling rates, engineered demolition plans, aggregate specifications, equipment attachments or certifications.
-
-## Current website status
-
-### Substantially complete
-
-- `index.html` — primary homepage
-- `about/index.html` with `about/about.css` — full, copy-led company story
-- `demolition/index.html` with `demolition/demolition.css` — full demolition service page
-- `equipment-rental/index.html` — confirmed fleet, hire information and quote links
-- `aggregates-materials/index.html` — Hill 20 materials, collection guidance and hours
-- `haulage-services/index.html` — equipment, container, materials and general trucking capabilities
-- `site-works/index.html` — general contracting, construction and site works
-- `projects/index.html` — named project records and field photographs
-- `404.html`
-
-### Other routes
-
-- `blog/index.html` — coming-soon page
-- `contact/index.html` — redirects to the homepage contact section
-
-### Important implementation notes
-
-- `/demolition/` is the dedicated demolition route.
-- Homepage and About-page demolition links already point to `/demolition/`.
-- Construction and land-development links still point to `/site-works/`.
-- `sitemap.xml` has not yet been updated to include `/demolition/`.
-- The homepage quote form is connected to Web3Forms. Confirm delivery to DL’s inbox before launch.
-- Homepage testimonials are explicitly marked illustrative and must be replaced with approved testimonials before launch.
-- `script2.js` appears unused. There is no current `index2.html`; the alternate homepage experiments were deleted.
-
-## Recent design/content decisions
-
-- Keep the existing industrial red/yellow/black/limestone visual system.
-- Display type is Oswald; body type is Inter.
-- The client prefers the original homepage over alternate homepage experiments.
-- Avoid making the site feel overly blocky, templated or “conformist.”
-- The red capability strip below the homepage hero was recently enlarged for readability and changed to a two-by-two grid on mobile.
-- Retain the homepage service-reach element.
-- The About page should tell DL's company story, not read primarily as Denis's biography.
-- The About page is intentionally copy-led with one supporting image.
-- The red quote section at the bottom of the About page must remain unchanged unless the user explicitly requests otherwise.
-- The testimonial section should remain visually restrained and carousel-based.
-- Service pages should explain the service. Specific project case studies belong in the Projects/portfolio section.
-- The demolition page therefore avoids naming projects in its main content and only links to completed work.
-
-## Demolition page decisions
-
-The demolition page is currently the most complete service page because the service itself is confirmed and DL has strong real-world experience.
-
-It contains:
-
-- Demolition-specific hero and CTAs
-- Service overview and project-role positioning
-- Major building demolition, equipment operations, haulage and site-clearance scope
-- Four-stage enquiry/delivery explanation
-- Supporting plant and in-house maintenance context without relying on exact fleet counts
-- FAQ and conversion section
-
-Do not turn this page into a project gallery. Use `/projects/` for named work and case studies.
-
-## Known project/media context
-
-The `Content/images/` and `Content/videos/` directories contain the photography and footage used by the site, including:
-
-- Rex St. Lucian demolition (2018)
-- Queenslane demolition
-- LaCroix Chabeaux Road Repairs
-- Paix Bouche retaining-wall construction (2026)
-- Buckeye project field media
-- Fleet photography
-
-The homepage currently previews Rex St. Lucian, Queenslane and LaCroix Chabeaux Road Repairs.
+Operations can confirm the specific machine, attachments and hire schedule for each job. Credentials, licences, insurance, safety certifications and procurement documents require confirmation before publication. Use only approved project outcomes and customer endorsements.
 
 ## Technical setup
 
-- Static HTML/CSS/JavaScript; no package manager or build step
-- Tailwind CSS CDN
-- Google Fonts: Inter and Oswald
-- Font Awesome CDN
-- Shared styles: `styles.css`
-- Equipment Rental, Aggregates & Materials and Haulage share `service-pages.css` and use local layout styles.
-- Shared behavior: `script.js`
-- Coming-soon styling: `coming-soon.css`
-- Local preview has been running at `http://127.0.0.1:5500/`
-- Follow `DESIGN_SYSTEM.md` before changing or building pages.
-- Preserve accessibility basics: semantic headings, descriptive alt text, visible focus, 44px+ controls, functional mobile menu and no horizontal overflow.
+- Static hosting serves the HTML files, stylesheets, shared script, fonts and Content folders directly. No Node runtime is required. Publish both Content subfolders and the fonts directory, alongside logo.jpg at the root.
+- tailwind.css is the checked-in production stylesheet for templates that use Tailwind utility classes. The source is tailwind.input.css. If utility classes change, regenerate it from the repository root using the command below. The three newer service templates use styles.css and service-pages.css directly.
+- Inter and Oswald use local WOFF2 files with licence notices in fonts/. Font Awesome 6.5.2 is pinned with integrity checking on pages that use it. The quote form uses Web3Forms and its captcha integration. The map uses Google Maps.
+- The homepage hero uses a local poster and a deferred, muted loop. It pauses offscreen and serves the still to people with reduced motion enabled. Project and demolition videos are click-to-play. English caption tracks are present on the demolition and LaCroix videos. Have DL review the demolition captions against the spoken audio and replace the earlier website address in the video once the public domain is final. The page currently directs visitors to the correct enquiry details.
+- See [Media naming and storage](MEDIA_NAMING.md) for the deployed assets. Keep Images/, NewContent/ and local working files out of the deploy.
 
-## Responsive and QA state
+    npx --yes tailwindcss@3.4.17 -i tailwind.input.css -o tailwind.css --content "index.html,about/index.html,blog/index.html,contact/index.html,demolition/index.html,projects/index.html,site-works/index.html" --minify
 
-- Homepage and About page have been reviewed at common desktop/mobile widths.
-- The demolition page was visually checked at full desktop width and at 375px mobile.
-- Demolition mobile navigation, content stacking and fixed action bar render correctly.
-- `script.js` passes `node --check`.
-- `git diff --check` passes apart from normal Windows LF/CRLF notices.
+## Launch checklist
 
-## Source-control/deployment warning
-
-The worktree is intentionally dirty. Existing changes belong to the user; do not reset or overwrite them.
-
-Deploy both `Content/` subdirectories with the site. See [Media naming and storage](MEDIA_NAMING.md) for how to add and name assets.
-
-## Strong next steps
-
-1. Update `sitemap.xml` with `/demolition/` and review site-wide navigation consistency.
-2. Gather approved project details for more substantial case studies.
-3. Replace illustrative testimonials with approved client quotes.
-4. Verify receipt of a test quote enquiry with DL.
-5. Confirm the final domain, social URLs, analytics, Search Console and production deployment setup.
-
-## Primary reference files
-
-- `README.md` — detailed business, SEO and content source of truth
-- `DESIGN_SYSTEM.md` — mandatory design rules
-- `index.html` / `styles.css` — established homepage system
-- `about/index.html` / `about/about.css` — approved About direction
-- `demolition/index.html` / `demolition/demolition.css` — completed service-page pattern
-- `DL Aggregates Marketting Plan 2.md` — broader marketing context
-
+1. **Confirm the domain and hosting access.** Once available, set DNS and HTTPS, replace the provisional hostname everywhere, and verify live redirect behavior, a genuine HTTP 404, crawlable assets and sitemap URLs. Configure host-side caching, compression and security headers. Test any CSP with the captcha, quote form and map before enforcement.
+2. **Verify enquiry delivery and contact details.** Send an agreed test from the live domain to the actual Web3Forms destination. Confirm receipt, reply-to details and error behavior with DL. Verify both phone links and the Hill 20 Maps pin. The website’s local tests use simulated form responses.
+3. **Complete local listings and measurement.** Obtain Google Business Profile and Search Console access. Update FindYello and other controlled listings to the final domain, verified hours and two current numbers. Submit the live sitemap, inspect priority URLs, and set up analytics and lead measurement if approved. Track organic search separately from Maps.
+4. **Review the published pages.** Check the final mobile experience, accessibility and Core Web Vitals. Local Chrome QA covered 11 routes at three widths, sitemap and metadata consistency, caption loading, and simulated quote success and failure. The homepage mobile Lighthouse LCP improved from 3.6 to about 2.7 seconds. Equipment Rental transferred fewer bytes, while its simulated mobile LCP was about 3.5 seconds versus 2.9 seconds in the earlier baseline. Investigate that result on the deployed host. Live performance, Google indexing and rankings require verification after deployment.
+5. **Gather optional additions.** Obtain approved case-study details, testimonials, social URLs and any credentials DL wants published. Publish Project Notes and remove its noindex directive once there is substantive content. These additions can follow launch.

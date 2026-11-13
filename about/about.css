@@ -254,6 +254,8 @@
   color: var(--ink);
 }
 
+.about-inline-link { color: var(--red-dark); text-decoration: underline; text-underline-offset: .18em; }
+
 .about-closing { color: #fff; background: var(--red); }
 .closing-grid { display: grid; gap: 34px; align-items: end; padding-block: clamp(4.5rem, 8vw, 7rem); }
 .about-closing blockquote { max-width: 920px; margin: 0; font-family: var(--display); font-size: clamp(2.6rem, 5.6vw, 5.6rem); font-weight: 700; line-height: .98; text-transform: uppercase; }

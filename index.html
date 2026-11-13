@@ -7,21 +7,26 @@
   <meta name="description" content="DL Equipment &amp; Aggregates provides commercial demolition, heavy equipment rental, construction and haulage across Saint Lucia. Tell us about your project.">
   <meta name="theme-color" content="#161616">
   <link rel="canonical" href="https://dlequipmentaggregates.com/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dlequipmentaggregates.com/">
+  <meta property="og:title" content="DL Equipment &amp; Aggregates | Demolition in Saint Lucia">
+  <meta property="og:description" content="DL Equipment &amp; Aggregates provides commercial demolition, heavy equipment rental, construction and haulage across Saint Lucia. Tell us about your project.">
+  <meta property="og:image" content="https://dlequipmentaggregates.com/Content/images/homepage-demolition-hero-poster.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <link rel="preload" href="fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="Content/images/homepage-demolition-hero-poster.webp" as="image" fetchpriority="high">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":["LocalBusiness","GeneralContractor"],
+    "@id":"https://dlequipmentaggregates.com/#business",
     "name":"DL Equipment & Aggregates Ltd",
     "url":"https://dlequipmentaggregates.com/",
-    "image":"https://dlequipmentaggregates.com/logo.jpg",
+    "image":"https://dlequipmentaggregates.com/Content/images/homepage-demolition-hero-poster.webp",
+    "logo":"https://dlequipmentaggregates.com/logo.jpg",
     "foundingDate":"2014",
     "founder":{"@type":"Person","name":"Denis Louis"},
     "email":"dlequipment.aggregates@gmail.com",
@@ -51,8 +56,8 @@
     </div>
     <div class="nav-wrap">
       <div class="shell nav-inner">
-        <a href="./" class="brand-lockup" aria-label="DL Equipment and Aggregates home">
-          <img src="logo.jpg" alt="" width="58" height="58">
+        <a href="./" class="brand-lockup" aria-label="DL Equipment &amp; Aggregates Ltd home">
+          <img src="Content/images/dl-brand-logo-144w.webp" alt="" width="58" height="58">
           <span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span>
         </a>
         <button id="menuButton" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
@@ -215,49 +220,6 @@
       </div>
     </section>
 
-    <section class="testimonial-band" aria-labelledby="testimonial-title">
-      <div class="shell testimonial-carousel" data-testimonial-carousel role="region" aria-roledescription="carousel" aria-label="Client testimonials">
-        <div class="testimonial-header">
-          <div>
-            <p class="kicker">Client perspective</p>
-            <h2 id="testimonial-title">What project teams value.</h2>
-          </div>
-          <div class="testimonial-controls">
-            <button type="button" data-testimonial-prev aria-label="Show previous testimonial"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
-            <span data-testimonial-status aria-live="polite">1 of 3</span>
-            <button type="button" data-testimonial-next aria-label="Show next testimonial"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-          </div>
-        </div>
-
-        <div class="testimonial-stage">
-          <figure class="testimonial-slide" data-testimonial-slide role="group" aria-roledescription="slide" aria-label="1 of 3">
-            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <blockquote>DL helped coordinate the machines, material deliveries and haulage through one point of contact. That responsiveness helped keep the programme moving.</blockquote>
-            <figcaption><strong>Illustrative testimonial</strong><span>Client, company and project to be confirmed</span></figcaption>
-          </figure>
-          <figure class="testimonial-slide" data-testimonial-slide role="group" aria-roledescription="slide" aria-label="2 of 3" hidden>
-            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <blockquote>Having equipment and material supply coordinated through one team made it easier to respond when site priorities shifted.</blockquote>
-            <figcaption><strong>Illustrative testimonial</strong><span>Client, company and project to be confirmed</span></figcaption>
-          </figure>
-          <figure class="testimonial-slide" data-testimonial-slide role="group" aria-roledescription="slide" aria-label="3 of 3" hidden>
-            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-            <blockquote>Arranging haulage alongside the site works reduced hand-offs and kept communication clear across the programme.</blockquote>
-            <figcaption><strong>Illustrative testimonial</strong><span>Client, company and project to be confirmed</span></figcaption>
-          </figure>
-        </div>
-
-        <div class="testimonial-footer">
-          <div class="testimonial-dots" aria-label="Choose a testimonial">
-            <button type="button" data-testimonial-dot="0" aria-label="Show testimonial 1" aria-current="true"><span></span></button>
-            <button type="button" data-testimonial-dot="1" aria-label="Show testimonial 2"><span></span></button>
-            <button type="button" data-testimonial-dot="2" aria-label="Show testimonial 3"><span></span></button>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
     <section class="about-block" id="about">
       <div class="shell grid lg:grid-cols-2">
         <div class="about-copy section-pad">
@@ -335,7 +297,7 @@
         </div>
         <div class="map-visual lg:col-span-7">
           <iframe title="Map showing Hill 20, Babonneau, Saint Lucia" src="https://www.google.com/maps?q=Hill%2020%20Babonneau%20Saint%20Lucia&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-          <a class="map-pin" href="https://www.google.com/maps/search/?api=1&amp;query=Hill+20+Babonneau+Saint+Lucia" target="_blank" rel="noopener" aria-label="Open Hill 20, Babonneau in Google Maps"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><strong>DL EQUIPMENT</strong><small>Hill 20 · Babonneau</small></span></a>
+          <a class="map-pin" href="https://www.google.com/maps/search/?api=1&amp;query=Hill+20+Babonneau+Saint+Lucia" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><strong>DL EQUIPMENT</strong><small>Hill 20 · Babonneau</small></span></a>
         </div>
       </div>
     </section>
@@ -343,7 +305,7 @@
 
   <footer class="footer">
     <div class="shell grid gap-10 py-14 md:grid-cols-12">
-      <div class="md:col-span-4"><a href="#top" class="brand-lockup brand-lockup-footer"><img src="logo.jpg" alt="" width="60" height="60"><span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span></a><p class="mt-5 max-w-md">Major construction, demolition and land development backed by equipment, haulage and material supply across Saint Lucia.</p></div>
+      <div class="md:col-span-4"><a href="#top" class="brand-lockup brand-lockup-footer"><img src="Content/images/dl-brand-logo-144w.webp" alt="" width="60" height="60"><span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span></a><p class="mt-5 max-w-md">Major construction, demolition and land development backed by equipment, haulage and material supply across Saint Lucia.</p></div>
       <div class="md:col-span-3 md:col-start-6"><h2>Services</h2><a href="site-works/">Construction &amp; contracting</a><a href="demolition/">Major demolition</a><a href="equipment-rental/">Heavy equipment rental</a><a href="aggregates-materials/">Blocks &amp; aggregates</a><a href="haulage-services/">Haulage &amp; transport</a></div>
       <div class="md:col-span-2"><h2>Company</h2><a href="about/">About DL</a><a href="projects/">Projects</a><a href="blog/">Project notes</a><a href="#contact">Contact</a></div>
       <div class="md:col-span-2"><h2>Direct</h2><a href="tel:+17584505997">+1 758 450 5997</a><a href="tel:+17587196705">+1 758 719 6705</a><a href="mailto:dlequipment.aggregates@gmail.com">Email operations</a><a href="https://www.facebook.com/dlholdingslimited" target="_blank" rel="noopener">Facebook <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>

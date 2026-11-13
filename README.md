@@ -1,4 +1,7 @@
 README: DL Equipment & Aggregates Ltd Website
+
+See [the handover](HANDOVER.md) for current implementation status, domain decisions and the launch checklist. The requirements below describe the project brief.
+
 Business Overview
 DL Equipment & Aggregates Ltd is a Saint Lucian construction and heavy equipment company. DL can act as a general contractor or support another contractor as a specialist project partner. Its core capabilities include:
 

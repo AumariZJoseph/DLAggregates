@@ -108,6 +108,7 @@
 .service-feature { background: var(--limestone); }
 .service-feature-grid { align-items: center; }
 .service-feature-copy > p:not(.kicker) { margin: 16px 0 0; color: var(--muted); }
+.service-feature-copy > p a { color: var(--red-dark); text-decoration: underline; text-underline-offset: .18em; }
 .service-feature-copy address { margin: 14px 0 0; font-style: normal; font-weight: 800; }
 .service-feature-copy .service-link { margin-top: .5rem; }
 .service-feature .hours { border-color: var(--line); }

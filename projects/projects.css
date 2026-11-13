@@ -36,3 +36,4 @@
 .project-video-portrait { width: min(100%, 360px); justify-self: center; }
 .project-video-portrait video { aspect-ratio: 480 / 848; }
 .project-record-copy > .text-link { display: flex; margin-top: 10px; }
+.project-record-copy p a { color: var(--red-dark); text-decoration: underline; text-underline-offset: .18em; }

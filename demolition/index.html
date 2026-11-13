@@ -7,23 +7,53 @@
   <meta name="description" content="DL is a commercial demolition contractor in Saint Lucia for hotels and large buildings. Discuss structural demolition, debris haulage and site clearance.">
   <meta name="theme-color" content="#161616">
   <link rel="canonical" href="https://dlequipmentaggregates.com/demolition/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dlequipmentaggregates.com/demolition/">
+  <meta property="og:title" content="Commercial Demolition in Saint Lucia | DL Equipment">
+  <meta property="og:description" content="DL is a commercial demolition contractor in Saint Lucia for hotels and large buildings. Discuss structural demolition, debris haulage and site clearance.">
+  <meta property="og:image" content="https://dlequipmentaggregates.com/Content/images/demolition-services-overview-poster.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../tailwind.css">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="demolition.css">
   <link rel="icon" href="../logo.jpg" type="image/jpeg">
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "name":"Major demolition services",
-    "description":"Major building demolition in Saint Lucia supported by DL's heavy equipment, operators, haulage and in-house fleet maintenance.",
-    "areaServed":{"@type":"Country","name":"Saint Lucia"},
-    "provider":{"@type":["Organization","GeneralContractor"],"name":"DL Equipment & Aggregates Ltd","telephone":["+1-758-450-5997","+1-758-719-6705"],"address":{"@type":"PostalAddress","streetAddress":"Hill 20","addressLocality":"Babonneau","addressCountry":"LC"}}
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://dlequipmentaggregates.com/demolition/#service",
+      "name": "Commercial demolition",
+      "url": "https://dlequipmentaggregates.com/demolition/",
+      "description": "DL is a commercial demolition contractor in Saint Lucia for hotels and large buildings. Discuss structural demolition, debris haulage and site clearance.",
+      "provider": {
+        "@id": "https://dlequipmentaggregates.com/#business"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saint Lucia"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dlequipmentaggregates.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Commercial demolition",
+          "item": "https://dlequipmentaggregates.com/demolition/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="demolition-page antialiased">
@@ -42,8 +72,8 @@
     </div>
     <div class="nav-wrap">
       <div class="shell nav-inner">
-        <a href="../" class="brand-lockup" aria-label="DL Equipment and Aggregates home">
-          <img src="../logo.jpg" alt="" width="58" height="58">
+        <a href="../" class="brand-lockup" aria-label="DL Equipment &amp; Aggregates Ltd home">
+          <img src="../Content/images/dl-brand-logo-144w.webp" alt="" width="58" height="58">
           <span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span>
         </a>
         <button id="menuButton" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
@@ -116,11 +146,15 @@
           <h2 id="core-service-title">Demolition is part of what DL is built to do.</h2>
         </div>
         <div class="demolition-intro-grid">
+          <div>
           <video id="demolition-video" class="demolition-video" controls playsinline preload="none"
             poster="../Content/images/demolition-services-overview-poster.webp" width="848" height="480" aria-label="DL demolition services video">
             <source src="../Content/videos/demolition-services-overview.mp4" type="video/mp4">
+            <track kind="captions" src="../Content/videos/demolition-services-overview-en.vtt" srclang="en" label="English">
             <a href="../Content/videos/demolition-services-overview.mp4">Open the demolition video</a>
           </video>
+          
+          </div>
           <div class="demolition-intro-copy">
             <p class="lead">DL is a commercial demolition contractor serving hotel owners, developers and principal contractors across Saint Lucia.</p>
             <p>We can lead the demolition directly or join a wider construction programme as the demolition specialist. We match the excavators, operators and trucks to the structure, site access and surrounding conditions, and agree what needs to be cleared for the next phase.</p>
@@ -206,7 +240,7 @@
     </section>
   </main>
 
-  <footer class="footer"><div class="shell grid gap-10 py-14 md:grid-cols-12"><div class="md:col-span-4"><a href="../" class="brand-lockup brand-lockup-footer"><img src="../logo.jpg" alt="" width="60" height="60"><span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span></a><p class="mt-5 max-w-md">Major construction, demolition and land development backed by equipment, haulage and material supply across Saint Lucia.</p></div><div class="md:col-span-3 md:col-start-6"><h2>Services</h2><a href="../site-works/">Construction &amp; contracting</a><a href="./">Major demolition</a><a href="../equipment-rental/">Heavy equipment rental</a><a href="../aggregates-materials/">Blocks &amp; aggregates</a><a href="../haulage-services/">Haulage &amp; transport</a></div><div class="md:col-span-2"><h2>Company</h2><a href="../about/">Our story</a><a href="../projects/">Projects</a><a href="../#contact">Contact</a></div><div class="md:col-span-2"><h2>Direct</h2><a href="tel:+17584505997">+1 758 450 5997</a><a href="tel:+17587196705">+1 758 719 6705</a><a href="mailto:dlequipment.aggregates@gmail.com">Email operations</a></div></div><div class="footer-base"><div class="shell flex flex-col gap-2 py-5 sm:flex-row sm:items-center sm:justify-between"><p>© <span id="year"></span> DL Equipment &amp; Aggregates Ltd.</p><p>Built for serious work in Saint Lucia.</p></div></div></footer>
+  <footer class="footer"><div class="shell grid gap-10 py-14 md:grid-cols-12"><div class="md:col-span-4"><a href="../" class="brand-lockup brand-lockup-footer"><img src="../Content/images/dl-brand-logo-144w.webp" alt="" width="60" height="60"><span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span></a><p class="mt-5 max-w-md">Major construction, demolition and land development backed by equipment, haulage and material supply across Saint Lucia.</p></div><div class="md:col-span-3 md:col-start-6"><h2>Services</h2><a href="../site-works/">Construction &amp; contracting</a><a href="./">Major demolition</a><a href="../equipment-rental/">Heavy equipment rental</a><a href="../aggregates-materials/">Blocks &amp; aggregates</a><a href="../haulage-services/">Haulage &amp; transport</a></div><div class="md:col-span-2"><h2>Company</h2><a href="../about/">Our story</a><a href="../projects/">Projects</a><a href="../#contact">Contact</a></div><div class="md:col-span-2"><h2>Direct</h2><a href="tel:+17584505997">+1 758 450 5997</a><a href="tel:+17587196705">+1 758 719 6705</a><a href="mailto:dlequipment.aggregates@gmail.com">Email operations</a></div></div><div class="footer-base"><div class="shell flex flex-col gap-2 py-5 sm:flex-row sm:items-center sm:justify-between"><p>© <span id="year"></span> DL Equipment &amp; Aggregates Ltd.</p><p>Built for serious work in Saint Lucia.</p></div></div></footer>
   <div class="mobile-action-bar lg:hidden" aria-label="Quick actions"><a href="tel:+17584505997"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call now</a><a href="#demolition-enquiry">Discuss demolition <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
   <script src="../script.js" defer></script>
 </body>
