@@ -3,19 +3,9 @@
   background: #fff;
 }
 
-.about-page main h1,
-.about-page main h2,
-.about-page main h3 {
-  font-family: var(--display);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .about-page main h2 {
   margin: 0;
   font-size: clamp(2.5rem, 4.6vw, 4.6rem);
-  line-height: .98;
-  letter-spacing: -.03em;
 }
 
 .about-page main p {
@@ -46,8 +36,6 @@
   max-width: 780px;
   margin: 0;
   font-size: clamp(3.5rem, 5.8vw, 5.8rem);
-  line-height: .96;
-  letter-spacing: -.04em;
   text-wrap: balance;
 }
 
@@ -258,7 +246,7 @@
 
 .about-closing { color: #fff; background: var(--red); }
 .closing-grid { display: grid; gap: 34px; align-items: end; padding-block: clamp(4.5rem, 8vw, 7rem); }
-.about-closing blockquote { max-width: 920px; margin: 0; font-family: var(--display); font-size: clamp(2.6rem, 5.6vw, 5.6rem); font-weight: 700; line-height: .98; text-transform: uppercase; }
+.about-closing blockquote { max-width: 920px; margin: 0; font-family: var(--display); font-size: clamp(2.6rem, 5.6vw, 5.6rem); font-weight: var(--display-weight); line-height: var(--display-leading); letter-spacing: var(--display-tracking); text-transform: uppercase; }
 .about-closing cite { display: block; margin-top: 20px; font-family: var(--body); font-size: var(--text-small); font-style: normal; font-weight: 800; letter-spacing: .06em; }
 .closing-action { max-width: 390px; }
 .closing-action p { margin: 0 0 20px; color: #fff; }

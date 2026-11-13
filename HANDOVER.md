@@ -4,11 +4,11 @@ Updated 13 November 2026
 
 ## Current state
 
-The site is a static HTML, CSS and JavaScript project prepared for launch testing. The approved hero copy and industrial design are intact. Search priorities are commercial demolition first, heavy equipment rental second, construction and civil works third, and haulage and trucking fourth. The Hill 20 materials depot has its own service page.
+The site is a static HTML, CSS and JavaScript project prepared for launch testing. The approved hero copy and industrial design are intact. Search priorities are demolition, heavy equipment rental, construction and civil works, then haulage and trucking. The demolition page covers residential, hotel and commercial work. The Hill 20 materials depot has its own service page.
 
 The homepage, About, five service pages, and Projects have indexable page content and are listed in the XML sitemap. The coming-soon Project Notes page stays available with a noindex directive. The Contact route takes visitors to the homepage contact section. The custom 404 page is available for the host to serve with an HTTP 404 status.
 
-The illustrative testimonials have been removed from the homepage and its scripts and styles. Approved testimonials can be added after launch. Rex St. Lucian and Queenslane lead the demolition proof, with Buckeye and LaCroix Chabeaux supporting equipment and civil works. The existing galleries have direct links. A standalone Rex case study can follow once DL approves the project scope, location, dates, permissions and any outcomes to publish.
+The illustrative testimonials have been removed from the homepage and its scripts and styles. Approved testimonials can be added after launch. Rex St. Lucia and Queenslane lead the demolition proof, with Buckeye and LaCroix Chabeaux supporting equipment and civil works. The existing galleries have direct links. A standalone Rex case study can follow once DL approves the project scope, location, dates, permissions and any outcomes to publish.
 
 ## Domain decision deferred
 
@@ -22,7 +22,7 @@ The illustrative testimonials have been removed from the homepage and its script
 - DL Equipment & Aggregates Ltd was founded in 2014 by Denis Louis of Cacao, Babonneau, with Lindy Louis involved from the beginning. DL expanded into heavy equipment and materials in 2017.
 - Hill 20, Babonneau, Saint Lucia is the store, sales depot, equipment yard and office. Hours are Monday to Friday 8:00 AM to 4:00 PM, Saturday closed and Sunday 8:00 AM to 1:00 PM.
 - Main phone +1 758 450 5997. Alternate phone +1 758 719 6705. Email dlequipment.aggregates@gmail.com. The former 715 number should be removed from directory listings.
-- DL can lead an agreed scope as general contractor or work alongside a principal contractor. Core services include commercial and hotel demolition, construction, excavation, land development, site preparation, road works, equipment hire, haulage and materials.
+- DL can lead an agreed scope as general contractor or work alongside a principal contractor. Core services include residential, hotel and commercial demolition, construction, excavation, land development, site preparation, road works, equipment hire, haulage and materials.
 - Hill 20 supplies in-house concrete blocks, sand, gravel, crushed stone, cement and ready-mix concrete. The depot handles pricing, grades, sizes, availability, collection and delivery enquiries.
 - The fleet includes seven excavators from approximately 3.5 to 35 tonnes, one grader, a bulldozer, rollers, a backhoe, dumpers, forklifts, 20-tonne dump trucks, smaller trucks, trailer trucks, lowboys, flatbeds and 20- and 40-foot beds.
 - Crane trucks have rated lifting capacities of 2.5 to 45 tonnes. Heavy equipment haulage is available up to 30 tonnes, subject to the load, route and site access. The in-house garage supports fleet maintenance.

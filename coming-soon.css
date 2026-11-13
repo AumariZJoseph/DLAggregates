@@ -4,7 +4,7 @@
 .coming-copy { display: flex; flex-direction: column; justify-content: center; padding-block: clamp(4.5rem, 10vw, 8rem); }
 .cs-status { display: flex; align-items: center; margin: 0 0 22px; color: var(--red); font-size: var(--text-small); font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .cs-status::before { content: ""; width: 44px; height: 5px; margin-right: 13px; background: var(--yellow); }
-.coming-copy h1 { max-width: 780px; margin: 0; font-family: var(--display); font-size: clamp(3.5rem, 8vw, 7.7rem); line-height: .92; letter-spacing: -.04em; text-transform: uppercase; text-wrap: balance; }
+.coming-copy h1 { max-width: 780px; margin: 0; font-size: clamp(3.5rem, 8vw, 7.7rem); line-height: .92; letter-spacing: -.04em; text-transform: uppercase; text-wrap: balance; }
 .coming-copy > p:not(.cs-status) { max-width: 650px; margin: 28px 0 32px; color: var(--muted); font-size: clamp(1rem, 2vw, 1.15rem); }
 .cs-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .cs-field { position: relative; min-height: 420px; overflow: hidden; background: var(--ink) url('Content/images/coming-soon-construction-background.jpg') center / cover no-repeat; }

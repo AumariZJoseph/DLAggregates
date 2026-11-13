@@ -2,11 +2,6 @@
 .service-page main h2,
 .service-page main h3 {
   margin: 0;
-  font-family: var(--display);
-  font-weight: 700;
-  line-height: 1.02;
-  letter-spacing: -.035em;
-  text-transform: uppercase;
 }
 
 .service-page main h1 { font-size: clamp(2.85rem, 5.9vw, 5.85rem); }
@@ -131,7 +126,7 @@
 .service-facts .shell > div { display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 1rem 0; }
 .service-facts .shell > div + div { border-top: 1px solid rgba(22,22,22,.25); }
 .service-facts dt { font-size: var(--text-medium); font-weight: 700; }
-.service-facts dd { margin: 0; font-family: var(--display); font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700; line-height: 1.2; }
+.service-facts dd { margin: 0; font-family: var(--display); font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: var(--display-weight); line-height: 1.2; }
 
 .service-cta { color: var(--white); background: var(--red-dark); }
 .service-cta h2 { max-width: 15ch; }

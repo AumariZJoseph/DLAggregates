@@ -59,8 +59,8 @@ if (menuButton && primaryNav) {
 const projectLedger = document.querySelector('.project-ledger');
 if (projectLedger) {
   const openProject = (hash) => {
-    const project = document.getElementById(hash.slice(1));
-    if (project?.matches('details.project-record') && projectLedger.contains(project)) {
+    const project = document.getElementById(hash.slice(1))?.closest('details.project-record');
+    if (project && projectLedger.contains(project)) {
       project.open = true;
     }
   };
