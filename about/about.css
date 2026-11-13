@@ -100,7 +100,7 @@
 }
 
 .story-hero-portrait span {
-  font-size: .7rem;
+  font-size: var(--text-small);
   font-weight: 800;
   letter-spacing: .055em;
   text-transform: uppercase;
@@ -155,7 +155,7 @@
 .story-aside figcaption {
   margin-top: 10px;
   color: var(--muted);
-  font-size: .75rem;
+  font-size: var(--text-small);
 }
 
 .milestones {
@@ -257,7 +257,7 @@
 .about-closing { color: #fff; background: var(--red); }
 .closing-grid { display: grid; gap: 34px; align-items: end; padding-block: clamp(4.5rem, 8vw, 7rem); }
 .about-closing blockquote { max-width: 920px; margin: 0; font-family: var(--display); font-size: clamp(2.6rem, 5.6vw, 5.6rem); font-weight: 700; line-height: .98; text-transform: uppercase; }
-.about-closing cite { display: block; margin-top: 20px; font-family: var(--body); font-size: .78rem; font-style: normal; font-weight: 800; letter-spacing: .06em; }
+.about-closing cite { display: block; margin-top: 20px; font-family: var(--body); font-size: var(--text-small); font-style: normal; font-weight: 800; letter-spacing: .06em; }
 .closing-action { max-width: 390px; }
 .closing-action p { margin: 0 0 20px; color: #fff; }
 .closing-action .btn { color: var(--ink); background: var(--yellow); }

@@ -9,10 +9,10 @@
   <link rel="canonical" href="https://dlequipmentaggregates.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <link rel="preload" href="Content/images/homepage-demolition-hero-poster.webp" as="image" fetchpriority="high">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
@@ -23,9 +23,9 @@
     "url":"https://dlequipmentaggregates.com/",
     "image":"https://dlequipmentaggregates.com/logo.jpg",
     "foundingDate":"2014",
-    "founder":{"@type":"Person","name":"Dennis Louis"},
+    "founder":{"@type":"Person","name":"Denis Louis"},
     "email":"dlequipment.aggregates@gmail.com",
-    "telephone":"+1-758-450-5997",
+    "telephone":["+1-758-450-5997","+1-758-719-6705"],
     "address":{"@type":"PostalAddress","streetAddress":"Hill 20","addressLocality":"Babonneau","addressCountry":"LC"},
     "areaServed":{"@type":"Country","name":"Saint Lucia"},
     "openingHoursSpecification":[
@@ -40,63 +40,68 @@
 
   <header class="site-header" id="top">
     <div class="utility-bar">
-      <div class="shell flex min-h-10 items-center justify-between gap-4 py-2 text-xs font-semibold text-white">
-        <p class="hidden sm:block"><i class="fa-solid fa-location-dot mr-2 text-[#F2B705]" aria-hidden="true"></i>Hill 20, Babonneau, Saint Lucia</p>
-        <div class="ml-auto flex items-center gap-5">
-          <a href="mailto:dlequipment.aggregates@gmail.com" class="hidden md:inline-flex hover:text-[#F2B705]"><i class="fa-regular fa-envelope mr-2" aria-hidden="true"></i>dlequipment.aggregates@gmail.com</a>
-          <a href="tel:+17584505997" class="inline-flex min-h-7 items-center hover:text-[#F2B705]"><i class="fa-solid fa-phone mr-2" aria-hidden="true"></i>+1 758 450 5997</a>
+      <div class="shell utility-inner">
+        <p class="utility-location">Hill 20, Babonneau, Saint Lucia</p>
+        <div class="utility-links">
+          <a class="utility-email" href="mailto:dlequipment.aggregates@gmail.com">dlequipment.aggregates@gmail.com</a>
+          <a href="tel:+17584505997">+1 758 450 5997</a>
+          <a href="tel:+17587196705">+1 758 719 6705</a>
         </div>
       </div>
     </div>
-
     <div class="nav-wrap">
-      <div class="shell flex min-h-[82px] items-center justify-between gap-6">
-        <a href="#top" class="brand-lockup" aria-label="DL Equipment and Aggregates home">
-          <img src="logo.jpg" alt="DL Equipment & Aggregates Ltd" width="68" height="68">
+      <div class="shell nav-inner">
+        <a href="./" class="brand-lockup" aria-label="DL Equipment and Aggregates home">
+          <img src="logo.jpg" alt="" width="58" height="58">
           <span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span>
         </a>
-
-        <nav class="desktop-nav hidden lg:flex" aria-label="Primary navigation">
-          <a href="#services">Services</a>
-          <a href="demolition/">Demolition</a>
-          <a href="equipment-rental/">Equipment</a>
-          <a href="projects/">Projects</a>
-          <a href="about/">Company</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a href="#quote" class="btn btn-primary hidden lg:inline-flex">Request a quote <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-        <button id="menuButton" class="menu-button lg:hidden" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <button id="menuButton" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
           <span></span><span></span><span></span>
         </button>
+        <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="./" aria-current="page">Home</a>
+          <details class="nav-dropdown" name="primary-menu">
+            <summary class="nav-link">
+              <span>Services</span>
+            </summary>
+            <div class="nav-dropdown-links">
+              <a href="#services">All services</a>
+              <a href="site-works/">Site Works</a>
+              <a href="demolition/">Demolition</a>
+              <a href="equipment-rental/">Equipment</a>
+              <a href="aggregates-materials/">Materials</a>
+              <a href="haulage-services/">Haulage</a>
+            </div>
+          </details>
+          <details class="nav-dropdown" name="primary-menu">
+            <summary class="nav-link">Projects</summary>
+            <div class="nav-dropdown-links">
+              <a href="projects/">All projects</a>
+              <a href="projects/#rex-st-lucian">Rex St. Lucian demolition</a>
+              <a href="projects/#buckeye-project">Buckeye Project</a>
+              <a href="projects/#lacroix-chabeaux">LaCroix Chabeaux Road Repairs</a>
+              <a href="projects/#queenslane-demolition">Queenslane demolition</a>
+            </div>
+          </details>
+          <a class="nav-link" href="about/">Company</a>
+          <a class="nav-link" href="blog/">Blog</a>
+          <a class="nav-link" href="#contact" data-contact-link>Contact</a>
+          <a class="btn btn-primary nav-quote" href="#quote">Request a quote</a>
+        </nav>
       </div>
-
-      <nav id="mobileMenu" class="mobile-menu lg:hidden" aria-label="Mobile navigation" hidden>
-        <div class="shell py-5">
-          <a href="#services">Services</a>
-          <a href="equipment-rental/">Equipment</a>
-          <a href="aggregates-materials/">Materials</a>
-          <a href="haulage-services/">Haulage</a>
-          <a href="demolition/">Demolition</a>
-          <a href="projects/">Projects</a>
-          <a href="about/">Company</a>
-          <a href="blog/">Blog</a>
-          <a href="#contact">Contact</a>
-          <a href="#quote" class="btn btn-primary mt-4">Request a quote</a>
-        </div>
-      </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-photo" role="img" aria-label="Heavy excavator working on a large construction site in Saint Lucia"></div>
+      <video id="heroVideo" class="hero-video" muted loop playsinline preload="none" aria-hidden="true"
+        poster="Content/images/homepage-demolition-hero-poster.webp" data-src="Content/videos/homepage-demolition-hero-loop.mp4"></video>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="shell hero-layout">
         <div class="hero-copy">
           <p class="location-line">Construction, demolition &amp; land development</p>
           <h1 id="hero-title">One team for<br> major construction.</h1>
-          <p class="hero-lede">DL delivers major construction, equipment rental, large-scale demolition and land development across Saint Lucia—backed by equipment, haulage and material supply.</p>
+          <p class="hero-lede">DL delivers major construction, equipment rental, large-scale demolition and land development projects across Saint Lucia—delivering heavy equipment, haulage and material supply.</p>
           <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#quote" class="btn btn-primary">Request project pricing <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             <a href="#services" class="btn btn-ghost">View our services</a>
@@ -130,7 +135,7 @@
           <div class="service-ledger">
             <article class="service-row" id="equipment">
               <div class="service-marker"><i class="fa-solid fa-person-digging" aria-hidden="true"></i></div>
-              <div><h3>Equipment rental</h3><p>Seven excavators from 3.5 to 35 tonnes, plus dozer, grader, rollers, backhoe, forklifts, trucks, lowboys and cranes—all available for rent.</p></div>
+              <div><h3>Equipment rental</h3><p>Seven excavators from approximately 3.5 to 35 tonnes, plus a grader, bulldozer, rollers, backhoe, dumpers, trucks and lifting equipment available for hire.</p></div>
               <a href="equipment-rental/" aria-label="View equipment rental page">View equipment <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             </article>
 
@@ -148,12 +153,12 @@
 
             <article class="service-row" id="materials">
               <div class="service-marker"><i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i></div>
-              <div><h3>Aggregates &amp; concrete blocks</h3><p>DL produces concrete blocks and sand in-house, and supplies aggregates, cement and ready-mix from the Hill 20 operation.</p></div>
+              <div><h3>Aggregates &amp; building materials</h3><p>Buy DL-made concrete blocks, sand, gravel, crushed stone, cement and ready-mix concrete from the Hill 20 depot.</p></div>
               <a href="aggregates-materials/" aria-label="View aggregates and materials page">View materials <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             </article>
             <article class="service-row" id="haulage">
               <div class="service-marker"><i class="fa-solid fa-truck-ramp-box" aria-hidden="true"></i></div>
-              <div><h3>Haulage &amp; transport</h3><p>Small and large trucking, container haulage and heavy-equipment transport using tractor heads, lowboys, 20- and 40-foot beds and flatbeds.</p></div>
+              <div><h3>Haulage &amp; transport</h3><p>Island-wide container and materials transport, with heavy equipment haulage up to 30 tonnes and 20-tonne dump trucks for bulk loads.</p></div>
               <a href="haulage-services/" aria-label="View haulage services page">View haulage <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             </article>
           </div>
@@ -163,7 +168,7 @@
 
     <section class="equipment-stage" aria-labelledby="fleet-title">
       <div class="equipment-stage-image">
-        <img src="Images/BuckeyeProject/WhatsApp Image 2026-11-03 at 2.45.50 PM.jpeg" alt="DL single-drum roller available for heavy site compaction in Saint Lucia" width="1600" height="1200" loading="lazy">
+        <img src="Content/images/buckeye-single-drum-roller.jpg" alt="DL single-drum roller available for heavy site compaction in Saint Lucia" width="1600" height="1200" loading="lazy">
         <span class="photo-label">DL equipment in the field</span>
       </div>
       <div class="equipment-stage-copy">
@@ -172,10 +177,10 @@
         <p>DL rents its entire equipment fleet across Saint Lucia, matching the machine and transport arrangement to the work, site access and construction programme.</p>
         <ul class="rental-list">
           <li><span>Seven excavators</span><small>Approximately 3.5 to 35 tonnes</small></li>
-          <li><span>Earthworks fleet</span><small>Bulldozer, grader, rollers &amp; backhoe</small></li>
-          <li><span>Dump trucks</span><small>Five 10-wheel trucks plus smaller units</small></li>
-          <li><span>Heavy transport</span><small>Four tractor heads, lowboys &amp; flatbeds</small></li>
-          <li><span>Cranes &amp; forklifts</span><small>Two cranes plus material-handling support</small></li>
+          <li><span>Earthworks fleet</span><small>Bulldozer, one grader, rollers, backhoe &amp; dumpers</small></li>
+          <li><span>Dump trucks</span><small>20-tonne dump trucks and smaller trucks</small></li>
+          <li><span>Heavy transport</span><small>Trailer trucks, lowboys &amp; flatbeds</small></li>
+          <li><span>Crane trucks &amp; forklifts</span><small>Crane truck lifting capacities from 2.5 to 45 tonnes</small></li>
         </ul>
         <p class="rental-note">Machine class, attachments and availability are confirmed for each project.</p>
         <a href="equipment-rental/" class="btn btn-equipment">View equipment rentals <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
@@ -197,16 +202,16 @@
 
         <div class="project-grid mt-12">
           <article class="project-card project-card-main">
-            <img src="Images/Rex St. Lucian Demolition - 2018/41993454-3f17-423a-bcdb-d84898d3e884.jpg" alt="DL excavators carrying out demolition work at the Rex St. Lucian hotel" width="859" height="644" loading="lazy">
+            <img src="Content/images/rex-st-lucian-hotel-structure-demolition.jpg" alt="DL excavators carrying out demolition work at the Rex St. Lucian hotel" width="859" height="644" loading="lazy">
             <div class="project-caption"><span>Major hotel demolition · 2018</span><h3>Rex St. Lucian demolition</h3><p>Large-scale structural demolition supported by heavy plant and coordinated site operations.</p></div>
           </article>
           <article class="project-card">
-            <img src="Images/Queenslane Demolition/IMG_7069.jpg" alt="Queenslane structure during a major demolition programme by DL" width="1145" height="644" loading="lazy">
+            <img src="Content/images/queenslane-demolition-24-structure.jpg" alt="Queenslane structure during a major demolition programme by DL" width="1145" height="644" loading="lazy">
             <div class="project-caption"><span>Structural demolition</span><h3>Queenslane demolition</h3></div>
           </article>
           <article class="project-card">
-            <img src="Images/Paix Bouche - Retaining Wall Construction - 2026/IMG_20260326_114634.jpg" alt="DL excavator completing ground works for retaining wall construction at Paix Bouche" width="483" height="644" loading="lazy">
-            <div class="project-caption"><span>Civil construction · 2026</span><h3>Paix Bouche retaining wall</h3></div>
+            <img src="Content/images/lacroix-chabeaux-roadside-backhoe.webp" alt="DL crew and backhoe working along the road at LaCroix Chabeaux" width="960" height="849" loading="lazy">
+            <div class="project-caption"><span>Civil works</span><h3>LaCroix Chabeaux Road Repairs</h3></div>
           </article>
         </div>
         
@@ -261,7 +266,7 @@
         <div class="about-copy section-pad">
           <p class="kicker">About DL Equipment &amp; Aggregates</p>
           <h2>From one truck to major projects.</h2>
-          <p class="lead">Dennis Louis founded DL in 2014 with one 10-wheel dump truck. With his wife, Lindy, beside him from day one. That first truck grew into a construction, demolition, equipment, haulage and materials operation built to take on serious work.</p>
+          <p class="lead">Denis Louis founded DL in 2014 with one dump truck. With his wife, Lindy, beside him from day one. That first truck grew into a construction, demolition, equipment, haulage and materials operation built to take on serious work.</p>
           <div class="commitments">
             <div><i class="fa-solid fa-truck" aria-hidden="true"></i><span><strong>Built since 2014</strong>Humble beginnings in Babonneau</span></div>
             <div><i class="fa-solid fa-people-group" aria-hidden="true"></i><span><strong>Approximately 28 people</strong>A team that expands with the work</span></div>
@@ -270,23 +275,17 @@
           <a href="about/" class="btn btn-dark about-cta">Read the DL story <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="about-visual">
-          <img src="Images/BuckeyeProject/WhatsApp Image 2026-11-03 at 2.45.45 PM.jpeg" alt="DL Equipment and Aggregates branded heavy haulage truck and lowboy trailer" width="1600" height="1200" loading="lazy">
-          <blockquote>“From scratch—from nothing to something—we develop it.”<cite>Dennis Louis · Founder</cite></blockquote>
+          <img src="Content/images/buckeye-heavy-haulage-truck.jpg" alt="DL Equipment and Aggregates branded heavy haulage truck and lowboy trailer" width="1600" height="1200" loading="lazy">
+          <blockquote>“From scratch—from nothing to something—we develop it.”<cite>Denis Louis · Founder</cite></blockquote>
         </div>
       </div>
     </section>
 
     <section class="section-pad updates" aria-labelledby="updates-title">
       <div class="shell">
-        <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <div><p class="kicker">From the yard &amp; the field</p><h2 id="updates-title">Project notes.</h2></div>
-          <a href="#contact" class="text-link">Ask about recent work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-        </div>
-        <div class="updates-grid mt-10">
-          <article><span>Project update</span><h3>Preparing a live site for efficient machine access</h3><p>How early clearing and haul-route planning can keep larger earthworks moving.</p><a href="#contact">Discuss your access plan <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
-          <article><span>Depot note</span><h3>Planning block and aggregate collections from Hill 20</h3><p>Confirm product, quantity, collection timing and vehicle access with the depot before arrival.</p><a href="#quote">Discuss your order <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
-          <article><span>Fleet note</span><h3>Matching heavy equipment to project scope</h3><p>Access, programme, ground conditions and supporting operations all shape the right equipment plan.</p><a href="#equipment">Review equipment capability <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
-        </div>
+        <p class="kicker">Coming soon</p>
+        <h2 id="updates-title">Project notes.</h2>
+        <p class="updates-description">Follow DL Equipment &amp; Aggregates as our projects progress across Saint Lucia. We’ll share updates from the field, practical tips, and a look at the challenges we encounter, how we bring equipment, haulage and materials together on site, and what we learn along the way.</p>
       </div>
     </section>
 
@@ -298,21 +297,28 @@
           <p>Share the work type, location and timing. Our operations team will follow up to confirm scope and availability.</p>
           <div class="quote-direct">
             <a href="tel:+17584505997"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>Call for a faster response<strong>+1 758 450 5997</strong></span></a>
+            <a href="tel:+17587196705"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>Alternate number<strong>+1 758 719 6705</strong></span></a>
             <a href="mailto:dlequipment.aggregates@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>Send plans or load details<strong>dlequipment.aggregates@gmail.com</strong></span></a>
           </div>
         </div>
-        <form id="quoteForm" class="quote-form lg:col-span-6 lg:col-start-7" novalidate>
-          <div id="formStatus" class="form-status" role="status" tabindex="-1" hidden></div>
+        <form id="quoteForm" class="quote-form lg:col-span-6 lg:col-start-7" action="https://api.web3forms.com/submit" method="POST" aria-describedby="formNote">
+          <input type="hidden" name="access_key" value="a697fd20-8d73-4a67-92b9-fae4d81fb1e1">
+          <input type="hidden" name="subject" value="New website enquiry for DL Equipment &amp; Aggregates">
+          <input type="hidden" name="from_name" value="DL Equipment website">
+          <input type="hidden" name="source" value="DL Equipment website">
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <div id="formStatus" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
           <div class="grid gap-5 sm:grid-cols-2">
-            <div><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required></div>
-            <div><label for="company">Company</label><input id="company" name="company" autocomplete="organization"></div>
-            <div><label for="phone">Phone <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
-            <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+            <div><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" maxlength="120" required></div>
+            <div><label for="company">Company</label><input id="company" name="company" autocomplete="organization" maxlength="160"></div>
+            <div><label for="phone">Phone <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40" required></div>
+            <div><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
           </div>
-          <div class="mt-5"><label for="service">What do you need? <span aria-hidden="true">*</span></label><select id="service" name="service" required><option value="">Select a service</option><option>Construction &amp; general contracting</option><option>Demolition</option><option>Land development &amp; site works</option><option>Equipment rental</option><option>Aggregates &amp; concrete blocks</option><option>Haulage &amp; transport</option><option>Multiple services</option></select></div>
-          <div class="mt-5"><label for="details">Project details <span aria-hidden="true">*</span></label><textarea id="details" name="details" rows="4" required placeholder="Location, scope, quantities and target date"></textarea></div>
-          <button type="submit" class="btn btn-primary mt-6 w-full sm:w-auto">Send quote request <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-          <p class="form-note">Demo form—connect to your preferred email or CRM service before launch.</p>
+          <div class="mt-5"><label for="service">What do you need? <span aria-hidden="true">*</span></label><select id="service" name="service" required><option value="">Select a service</option><option>Construction &amp; general contracting</option><option>Demolition</option><option>Land development &amp; site works</option><option>Equipment rental</option><option>Aggregates &amp; building materials</option><option>Haulage &amp; transport</option><option>Multiple services</option></select></div>
+          <div class="mt-5"><label for="details">Project details <span aria-hidden="true">*</span></label><textarea id="details" name="message" rows="4" maxlength="3000" required placeholder="Location, scope, quantities and target date"></textarea></div>
+          <div class="h-captcha mt-5" data-captcha="true"></div>
+          <button type="submit" class="btn btn-primary mt-6 w-full sm:w-auto" data-submit-button><span data-submit-label>Send quote request</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          <p id="formNote" class="form-note">Your request goes directly to DL Equipment &amp; Aggregates. For urgent matters, use either phone number listed above.</p>
         </form>
       </div>
     </section>
@@ -325,9 +331,9 @@
           <address>Hill 20<br>Babonneau, Saint Lucia</address>
           <p class="depot-note">Concrete blocks are manufactured by DL, with blocks and aggregates available for purchase and collection at the depot.</p>
           <div class="contact-lines">
-            <a href="tel:+17584505997">450-5997</a><a href="tel:+17587150830">715-0830</a><a href="tel:+17587196705">719-6705</a>
+            <a href="tel:+17584505997">+1 758 450 5997</a><a href="tel:+17587196705">+1 758 719 6705</a><a href="https://www.facebook.com/dlholdingslimited" target="_blank" rel="noopener">Facebook <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
           </div>
-          <dl class="hours"><div><dt>Monday–Friday</dt><dd>8:00 AM–4:00 PM</dd></div><div><dt>Sunday</dt><dd>8:00 AM–1:00 PM</dd></div></dl>
+          <dl class="hours"><div><dt>Monday–Friday</dt><dd>8:00 AM–4:00 PM</dd></div><div><dt>Saturday</dt><dd>Closed</dd></div><div><dt>Sunday</dt><dd>8:00 AM–1:00 PM</dd></div></dl>
           <a class="btn btn-dark mt-7" href="https://www.google.com/maps/search/?api=1&query=Hill+20+Babonneau+Saint+Lucia" target="_blank" rel="noopener">Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
         </div>
         <div class="map-visual lg:col-span-7">
@@ -343,12 +349,13 @@
       <div class="md:col-span-4"><a href="#top" class="brand-lockup brand-lockup-footer"><img src="logo.jpg" alt="" width="60" height="60"><span><strong>DL EQUIPMENT</strong><small>&amp; AGGREGATES LTD</small></span></a><p class="mt-5 max-w-md">Major construction, demolition and land development backed by equipment, haulage and material supply across Saint Lucia.</p></div>
       <div class="md:col-span-3 md:col-start-6"><h2>Services</h2><a href="site-works/">Construction &amp; contracting</a><a href="demolition/">Major demolition</a><a href="equipment-rental/">Heavy equipment rental</a><a href="aggregates-materials/">Blocks &amp; aggregates</a><a href="haulage-services/">Haulage &amp; transport</a></div>
       <div class="md:col-span-2"><h2>Company</h2><a href="about/">About DL</a><a href="projects/">Projects</a><a href="blog/">Project notes</a><a href="#contact">Contact</a></div>
-      <div class="md:col-span-2"><h2>Direct</h2><a href="tel:+17584505997">+1 758 450 5997</a><a href="mailto:dlequipment.aggregates@gmail.com">Email operations</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+      <div class="md:col-span-2"><h2>Direct</h2><a href="tel:+17584505997">+1 758 450 5997</a><a href="tel:+17587196705">+1 758 719 6705</a><a href="mailto:dlequipment.aggregates@gmail.com">Email operations</a><a href="https://www.facebook.com/dlholdingslimited" target="_blank" rel="noopener">Facebook <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
     </div>
-    <div class="footer-base"><div class="shell flex flex-col gap-2 py-5 text-xs sm:flex-row sm:items-center sm:justify-between"><p>© <span id="year"></span> DL Equipment &amp; Aggregates Ltd.</p><p>Built for Saint Lucia.</p></div></div>
+    <div class="footer-base"><div class="shell flex flex-col gap-2 py-5 sm:flex-row sm:items-center sm:justify-between"><p>© <span id="year"></span> DL Equipment &amp; Aggregates Ltd.</p><p>Built for Saint Lucia.</p></div></div>
   </footer>
 
   <div class="mobile-action-bar lg:hidden" aria-label="Quick actions"><a href="tel:+17584505997"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call now</a><a href="#quote">Request quote <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>

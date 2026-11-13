@@ -1,0 +1,208 @@
+.service-page main h1,
+.service-page main h2,
+.service-page main h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+
+.service-page main h1 { font-size: clamp(2.85rem, 5.9vw, 5.85rem); }
+.service-page main h2 { font-size: clamp(2.35rem, 4.3vw, 4rem); text-wrap: balance; }
+.service-page main h3 { font-size: clamp(1.5rem, 2.35vw, 2.15rem); }
+.service-page main p { max-width: 62ch; }
+.service-page main .kicker { margin-bottom: 13px; }
+.service-page main .section-pad { padding-block: clamp(3.5rem, 7vw, 6.5rem); }
+
+.service-hero { color: var(--white); background: var(--ink); }
+.service-hero--materials { color: var(--ink); background: var(--limestone); }
+.service-hero-grid {
+  display: grid;
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4.75rem);
+  padding-block: clamp(2.5rem, 7vw, 6.5rem);
+}
+.service-hero--haulage .service-hero-grid { padding-bottom: 0; }
+.service-hero-copy { min-width: 0; padding-left: clamp(1rem, 2vw, 1.75rem); border-left: 6px solid var(--red); }
+.service-hero-copy .kicker { color: var(--yellow); }
+.service-hero--materials .kicker { color: var(--red-dark); }
+.service-hero-copy > p:not(.kicker) {
+  margin: 20px 0 0;
+  color: #e4e2da;
+  font-size: clamp(1rem, 1.6vw, 1.14rem);
+}
+.service-hero--materials .service-hero-copy > p:not(.kicker) { color: var(--muted); }
+.service-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1.25rem; margin-top: 24px; }
+.service-actions .btn { font-size: var(--text-medium); }
+.service-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: .5em;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: .25em;
+}
+.service-link:hover { color: var(--red-dark); }
+.service-hero:not(.service-hero--materials) .service-link:hover,
+.service-cta .service-link:hover { color: var(--yellow); }
+
+.service-photo { min-width: 0; margin: 0; }
+.service-photo img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--charcoal); }
+.service-photo figcaption {
+  padding: .8rem 1rem;
+  color: var(--ink);
+  background: var(--yellow);
+  font-size: var(--text-small);
+  font-weight: 700;
+}
+.service-hero--materials .service-photo figcaption,
+.service-hero--haulage .service-photo figcaption {
+  color: var(--white);
+  background: var(--charcoal);
+}
+.equipment-hero-photos { display: grid; gap: 8px; }
+.equipment-hero-excavator img { aspect-ratio: 16 / 10; object-position: center 38%; }
+.equipment-hero-fleet img { aspect-ratio: 2.45; object-position: center 42%; }
+.equipment-hero-fleet figcaption { color: var(--white); background: var(--charcoal); }
+
+.service-section-heading { max-width: 740px; margin-bottom: clamp(1.75rem, 4vw, 3.25rem); }
+.service-section-heading > p:not(.kicker) { margin: 14px 0 0; color: var(--muted); }
+.service-split { display: grid; gap: clamp(2rem, 6vw, 5.25rem); align-items: start; }
+.service-fleet { background: var(--limestone); }
+.service-fleet-groups { display: grid; gap: 2rem; }
+.service-fleet-groups h3 { padding-left: .75rem; border-left: 4px solid var(--red); }
+.fleet-list { margin: .75rem 0 0; border-top: 1px solid var(--line); }
+.fleet-list > div {
+  display: grid;
+  gap: .25rem 1rem;
+  padding-block: .75rem;
+  border-bottom: 1px solid var(--line);
+}
+.fleet-list dt { font-weight: 800; }
+.fleet-list dd { margin: 0; color: var(--muted); }
+.service-fleet-photos { display: grid; align-items: start; gap: clamp(1.25rem, 3vw, 2.5rem); }
+.service-dumper-photo img { object-position: center 40%; }
+.service-fleet-photos figcaption,
+.service-catalogue-photo figcaption,
+.service-haulage-photos figcaption {
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+}
+.service-haulage-photos { display: grid; gap: clamp(1.25rem, 4vw, 3.5rem); margin-top: clamp(2rem, 4vw, 3.5rem); }
+.service-haulage-photos img { aspect-ratio: 8 / 5; }
+
+.service-records {
+  display: grid;
+  gap: 0 clamp(1.75rem, 5vw, 4.75rem);
+  border-top: 1px solid var(--line);
+}
+.service-records article { min-width: 0; padding-block: clamp(1.25rem, 3vw, 2.25rem); border-bottom: 1px solid var(--line); }
+.service-records p { margin: 9px 0 0; color: var(--muted); }
+.service-records.service-materials-list { grid-template-columns: minmax(0, 1fr); }
+.service-materials-list article { padding-block: 1.15rem; }
+.service-feature { background: var(--limestone); }
+.service-feature-grid { align-items: center; }
+.service-feature-copy > p:not(.kicker) { margin: 16px 0 0; color: var(--muted); }
+.service-feature-copy address { margin: 14px 0 0; font-style: normal; font-weight: 800; }
+.service-feature-copy .service-link { margin-top: .5rem; }
+.service-feature .hours { border-color: var(--line); }
+.service-feature .hours > div { padding: 12px 0; border-color: var(--line); }
+.service-depot-hours {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: var(--yellow);
+}
+.service-depot-hours .hours { margin-top: 1rem; }
+.service-depot-hours .hours,
+.service-depot-hours .hours > div { border-color: rgba(22,22,22,.28); }
+.service-facts {
+  display: grid;
+  margin: 0;
+  padding-block: .5rem;
+  color: var(--ink);
+  background: var(--yellow);
+}
+.service-facts .shell { display: grid; margin-block: 0; }
+.service-facts .shell > div { display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 1rem 0; }
+.service-facts .shell > div + div { border-top: 1px solid rgba(22,22,22,.25); }
+.service-facts dt { font-size: var(--text-medium); font-weight: 700; }
+.service-facts dd { margin: 0; font-family: var(--display); font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700; line-height: 1.2; }
+
+.service-cta { color: var(--white); background: var(--red-dark); }
+.service-cta h2 { max-width: 15ch; }
+.service-cta-grid { align-items: center; }
+.service-cta p { margin: 0; }
+.service-cta .btn { color: var(--ink); background: var(--yellow); }
+.service-cta .btn:hover { color: var(--white); background: var(--ink); }
+.service-related { padding-block: 1.25rem; background: var(--limestone); }
+.service-related .shell { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.5rem; }
+.service-related strong { flex-basis: 100%; }
+
+.service-footer-grid {
+  display: grid;
+  gap: 1.75rem clamp(1.5rem, 4vw, 3.5rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+.service-footer-grid p { max-width: 38ch; }
+.service-footer-base .shell { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding-block: 1rem; }
+.service-footer-base p { margin: 0; }
+.service-footer-grid a { overflow-wrap: anywhere; }
+
+@media (min-width: 560px) {
+  .fleet-list > div { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+  .service-records, .service-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-facts .shell { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-facts .shell > div + div { padding-left: clamp(1.5rem, 4vw, 3.5rem); border-top: 0; border-left: 1px solid rgba(22,22,22,.25); }
+}
+
+@media (min-width: 560px) and (max-width: 767px) {
+  .service-fleet-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 768px) {
+  .service-hero-grid, .service-split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-haulage-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-hero--materials .service-hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+  .service-hero--materials .service-hero-copy { grid-area: 1 / 2; }
+  .service-hero--materials .service-photo { grid-area: 1 / 1; }
+  .service-hero--haulage .service-hero-grid { padding-bottom: clamp(2.5rem, 7vw, 6.5rem); }
+  .service-fleet-layout { grid-template-columns: minmax(0, 1.4fr) minmax(0, .85fr); }
+  .service-feature-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+  .service-catalogue-layout { grid-template-columns: minmax(0, 1.25fr) minmax(0, .9fr); }
+  .service-related strong { flex-basis: auto; }
+}
+
+@media (min-width: 1024px) {
+  .service-hero--equipment .service-hero-grid { grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); }
+  .service-hero--haulage .service-hero-grid {
+    width: 100%;
+    grid-template-columns: minmax(0, .46fr) minmax(0, .54fr);
+    align-items: stretch;
+    gap: 0;
+    padding-block: 0;
+  }
+  .service-hero--haulage .service-hero-copy {
+    align-self: center;
+    margin-left: max(2rem, calc((100vw - 1240px) / 2));
+    margin-right: clamp(1.5rem, 3.2vw, 3.5rem);
+    margin-block: clamp(3rem, 5vw, 5.5rem);
+  }
+  .service-hero--haulage .service-photo { position: relative; min-height: clamp(28rem, 43vw, 39rem); }
+  .service-hero--haulage .service-photo img { position: absolute; inset: 0; height: 100%; object-position: center 60%; }
+  .service-hero--haulage .service-photo figcaption { position: absolute; bottom: 0; left: 0; }
+  .service-dumper-photo { margin-left: clamp(1rem, 3vw, 2.75rem); }
+  .service-materials-list article {
+    display: grid;
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+    align-items: baseline;
+    gap: 1.25rem;
+  }
+  .service-materials-list p { margin: 0; }
+  .service-loads-layout { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: clamp(2rem, 5vw, 4.75rem); }
+  .service-loads-layout .service-section-heading { margin-bottom: 0; }
+  .service-footer-grid { grid-template-columns: minmax(0, 1.45fr) repeat(3, minmax(0, 1fr)); }
+}

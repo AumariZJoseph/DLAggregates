@@ -3,10 +3,10 @@ Business Overview
 DL Equipment & Aggregates Ltd is a Saint Lucian construction and heavy equipment company. DL can act as a general contractor or support another contractor as a specialist project partner. Its core capabilities include:
 
 Company Story
-Founder: Dennis Louis, originally from Cacao, Babonneau
-Business partner: Lindy Louis, Dennis's wife, who has supported the company from day one
-Founded: 2014, beginning with one 10-wheel dump truck
-Dennis's background: Trained auto mechanic who moved into heavy-equipment mechanics, trailer driving, machinery transport and equipment operation
+Founder: Denis Louis, originally from Cacao, Babonneau
+Business partner: Lindy Louis, Denis's wife, who has supported the company from day one
+Founded: 2014, beginning with one dump truck
+Denis's background: Trained auto mechanic who moved into heavy-equipment mechanics, trailer driving, machinery transport and equipment operation
 Major expansion: 2017, moving into heavy equipment, aggregates and construction materials
 Team: Approximately 27–28 employees, with workforce scaled further for larger projects
 In-house support: DL operates its own garage with mechanics, electricians, welders and body technicians to maintain and repair its fleet
@@ -27,22 +27,22 @@ Retaining walls and civil construction
 
 Building Supplies & Aggregates:
 Concrete blocks manufactured by DL
-Sand produced in-house
-Aggregates, cement and ready-mix concrete supplied
+Aggregates supplied: sand, gravel and crushed stone
+Cement and ready-mix concrete supplied
 Products available for purchase and collection at the Hill 20 depot
-Exact grades, sizes and detailed catalogue still require confirmation
+
 Heavy Equipment Rentals:
 All DL equipment is available for rent, subject to scheduling
 Seven excavators ranging from approximately 3.5 to 35 tonnes
-Bulldozer, motor grader, rollers, backhoe and forklifts
-Five 10-wheel dump trucks plus smaller trucks
-Four trailer tractor heads
+Bulldozer, one motor grader, rollers, backhoe, dumpers and forklifts
+20-tonne dump trucks and smaller trucks
+Trailer trucks
 Lowboys, flatbeds, 20-foot beds and 40-foot beds
-Two cranes
-Exact makes, models, years and individual capacities still require confirmation
+Crane trucks with lifting capacities from 2.5 to 45 tonnes
+Exact makes, models, years and attachments are confirmed for each enquiry
 
 Haulage & Transport:
-Island-wide heavy equipment haulage
+Island-wide heavy equipment haulage up to 30 tonnes, subject to load and access requirements
 Aggregate and construction material delivery
 Container haulage and delivery
 Construction waste disposal
@@ -50,7 +50,7 @@ Construction waste disposal
 Location & Contact
 Address: Hill 20, Babonneau, Saint Lucia
 Location type: Store, sales depot, equipment yard and office
-Phone: 1-758-450-5997 / 1-758-715-0830 / (758) 719-6705
+Phone: +1 758 450 5997 / +1 758 719 6705
 Email: dlequipment.aggregates@gmail.com
 Facebook: DL Equipment & Aggregates Ltd
 
@@ -58,6 +58,7 @@ Tagline: "Call us for your heavy equipment and hauling needs. We provide efficie
 
 Opening Hours:
 Monday–Friday: 8:00 AM – 4:00 PM
+Saturday: Closed
 Sunday: 8:00 AM – 1:00 PM
 
 Brand Colors
@@ -89,7 +90,7 @@ Pages
 Home — Hero section with tagline, service overview, CTA
 Equipment Rental — List of available machinery with descriptions
 Haulage Services — Island-wide transport capabilities
-Aggregates & Materials — DL-manufactured blocks and the confirmed aggregate catalogue (exact aggregate types pending)
+Aggregates & Materials — DL-made concrete blocks, sand, gravel, crushed stone, cement and ready-mix concrete from Hill 20
 Site Works — Grading, clearing, demolition, desilting
 Projects — Portfolio of notable completed work (critical for credibility with large clients)
 About Us — Company background, team, values

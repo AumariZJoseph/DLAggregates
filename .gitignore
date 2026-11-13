@@ -1,3 +1,8 @@
 index2.html
 .codex/
 .agents/
+
+# Local media archive and unused source files
+/Images/
+/NewContent/
+/equiprent.jpg
